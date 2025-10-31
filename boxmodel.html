@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Concept</title>
+
+    <style>
+        /* -----------------------------------------
+           GLOBAL PAGE DESIGN
+           - Clean readable layout with soft colors
+        ------------------------------------------*/
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #e9edf2, #cfd8e0);
+            color: #333;
+            margin: 0;
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #2f3e46;
+        }
+
+        .info {
+            width: 85%;
+            margin: 25px auto;
+            text-align: left;
+            background: #ffffffd0;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #cdd2d8;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        ul {
+            line-height: 1.7;
+        }
+
+        img {
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+
+        /* -----------------------------------------
+           BOX MODEL DEMONSTRATION STYLES
+           - Visually explains padding, border, margin
+        ------------------------------------------*/
+        .box {
+            display: inline-block;
+            background: linear-gradient(135deg, #6b7280, #4b5563);
+            color: white;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+
+            /* Box Model Layers */
+            width: 120px;              /* Content area width */
+            height: 120px;             /* Content area height */
+            padding: 10px 20px;        /* Inner space (padding) */
+            border: 6px groove #b0b8c1;/* Border area */
+            margin: 30px auto;         /* Outer spacing (margin) */
+
+            /* Extra Styling */
+            border-radius: 20px;
+            box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.2);
+            line-height: 120px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+            box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.25);
+        }
+
+        /* -----------------------------------------
+           FOOTER DESIGN
+        ------------------------------------------*/
+        footer {
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ==========================
+         PAGE TITLE
+    =========================== -->
+    <h1>📦 CSS Box Model Concept</h1>
+
+    <!-- ==========================
+         INTRODUCTION
+    =========================== -->
+    <div class="info">
+        <h2>📘 What is the CSS Box Model?</h2>
+        <p>The <b>CSS Box Model</b> describes how every element on a web page is treated as a rectangular box.  
+        It defines how <b>content</b>, <b>padding</b>, <b>border</b>, and <b>margin</b> work together to determine 
+        the total size and spacing of an element.</p>
+
+        <p>Understanding this concept helps you control layout, spacing, and alignment precisely in web design.</p>
+    </div>
+
+    <!-- ==========================
+         COMPONENTS EXPLANATION
+    =========================== -->
+    <div class="info">
+        <h2>🔍 Components of the Box Model</h2>
+        <ul>
+            <li><b>Content:</b> The text or image inside the box. Its size is set using <code>width</code> and <code>height</code>.</li>
+            <li><b>Padding:</b> The space between the content and the border. It adds inner spacing.</li>
+            <li><b>Border:</b> A visible line that surrounds the padding and content.</li>
+            <li><b>Margin:</b> The outermost space that separates the box from other elements.</li>
+        </ul>
+    </div>
+
+    <!-- ==========================
+         VISUAL DEMONSTRATION
+    =========================== -->
+    <div class="info" style="text-align:center;">
+        <h2>🧱 Visual Example</h2>
+        <p>The box below shows how padding, borders, and margins create space around content.</p>
+        <div class="box">Hello</div>
+        <p>Hover over it to see the smooth transition and shadow effect.</p>
+    </div>
+
+    <!-- ==========================
+         CODE SNIPPET EXPLANATION
+    =========================== -->
+    <div class="info">
+        <h2>💻 CSS Code Breakdown</h2>
+        <ul>
+            <li><code>width</code> and <code>height</code> define the size of the content box.</li>
+            <li><code>padding</code> adds inner spacing inside the border.</li>
+            <li><code>border</code> adds a visible edge around the padding and content.</li>
+            <li><code>margin</code> creates space outside the border.</li>
+            <li><code>box-shadow</code> adds depth for a 3D effect.</li>
+            <li><code>transition</code> enables smooth animation on hover.</li>
+        </ul>
+    </div>
+
+    <!-- ==========================
+         VISUAL DIAGRAM (OPTIONAL)
+    =========================== -->
+    <div class="info">
+        <h2>📊 Box Model Structure</h2>
+        <p>Below is a conceptual diagram of how the layers stack in the box model:</p>
+        <img src="./Box_model_png.PNG" alt="CSS Box Model Diagram" width="400">
+    </div>
+
+    <!-- ==========================
+         HOW TO TRY
+    =========================== -->
+    <div class="info">
+        <h2>🚀 How to Try This Concept</h2>
+        <ol>
+            <li>Create a file named <code>css-box-model.html</code>.</li>
+            <li>Copy this code into the file.</li>
+            <li>Open it in your browser to see the box model demo.</li>
+            <li>Try changing <b>padding</b>, <b>border</b>, or <b>margin</b> values to observe differences.</li>
+        </ol>
+    </div>
+
+    <!-- ==========================
+         FOOTER
+    =========================== -->
+    <footer>
+         CSS Learning Concept — Box Model Explained
+    </footer>
+
+</body>
+</html>
