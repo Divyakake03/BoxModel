@@ -66,8 +66,7 @@ Observe how each property affects the layout and spacing.
 
 ---
 
-## Screenshot (Optional)
+## Screenshot of Output
 
-If you have the diagram saved as `Box_model_png.PNG`, it can be referenced like this:
 ```html
-<img src="./Box_model_png.PNG" alt="CSS Box Model Diagram" width="400">
+<img src="./Output.PNG" alt="CSS Box Model Diagram" width="400">
