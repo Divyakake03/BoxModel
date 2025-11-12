@@ -68,5 +68,4 @@ Observe how each property affects the layout and spacing.
 
 ## Screenshot of Output
 
-```html
-<img src="./Output.PNG" alt="CSS Box Model Diagram" width="400">
+![Output](./Output.PNG)
